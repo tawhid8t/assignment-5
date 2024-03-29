@@ -7,3 +7,22 @@
 .inter{
     font-family: "Inter", sans-serif;
 }
+.set-bg{
+    background-color: #1DD100;
+    color: #fff;
+}
+.p-class{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #03071299;
+}
+.div-p-class{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px; 
+}
+.seat-btn:disabled{
+    background: red;
+}
+
