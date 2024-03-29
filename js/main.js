@@ -51,7 +51,20 @@ function customerDetails(){
     const passengerName = document.getElementById('name').value;
     const phoneNumber = parseInt(document.getElementById('number').value);
     const emailId = document.getElementById('email').value;
-    
-    
 }
 
+
+document.getElementById('scroll-btn').addEventListener('click', function(){
+
+        const targetSectionId = this.getAttribute('data-target');
+        const targetSection = document.getElementById(targetSectionId);
+        scrollToSection(targetSection);
+})
+        
+        function scrollToSection(section) {
+            var offsetTop = section.offsetTop;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
